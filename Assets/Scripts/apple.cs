@@ -16,4 +16,10 @@ public class apple : MonoBehaviour {
 		}
 	
 	}
+
+	void OnTriggerEnter(Collider other){
+		if (other.tag =="Basket"){
+			Destroy(gameObject);
+		}
+	}
 }
